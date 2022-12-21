@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700;800&display=swap');
+*{
+	font-family: 'Poppins', sans-serif;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+/* nav background */
+nav{
+	height: 80px;
+	background: lightblue;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 0px 50px 0px 80px;
+}
+
+nav .logo{
+	font-size: 30px;
+	color: #ffff;
+	font-weight: 500;
+}
+
+/*convert vertical ul into horizontal ul and remove bullet points*/
+nav ul{
+	display: flex;
+	list-style: none;
+}
+nav ul li{
+	margin: 0 14px;
+	font-weight: 18px;
+
+}
+
+/* link underlines are remove & give the text as white*/
+nav ul li a{
+	color: #1b1b1b;
+	text-decoration: none;
+	font-size: 20px;
+	font-weight: 500;
+	letter-spacing: 1px;
+	background: #ffff;
+	padding: 8px 10px;
+	border-radius: 25px;
+}
