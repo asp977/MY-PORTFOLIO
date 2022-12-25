@@ -8,7 +8,7 @@
 }
 
 body{
-    background: #f0faff;
+    background: black;
 }
 
 .nav{
@@ -17,7 +17,8 @@ body{
     left: 0;
     width: 100%;
     padding: 13px 200px;
-    background: #4a98f7;   
+    background: #4a98f7;  
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
 }
 
 .nav, .nav .nav-links{
@@ -46,9 +47,5 @@ a{
     list-style: none;
 }
 
-.nav .search-icon{
-    color: #fff;
-    font-size: 18px;
-    cursor: pointer;
-}
+
 
