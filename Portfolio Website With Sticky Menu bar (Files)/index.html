@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!-- Custom CSS Style Sheet -->
+	<link rel="stylesheet" type="text/css" href="style.css">
+
+	<!--  Font Awesome Icons Link  -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"/>
+
+	<!-- Goggle Fonts -->
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,400;0,500;0,600;0,800;1,900&display=swap" rel="stylesheet">
+
+	<title>Portfolio | Akash Pagi</title>
+</head>
+<body>
+<section class="homeSection">
+	
+	<!--  *****   Navbar Starts   *****  -->
+	<nav class="navBar">
+		<div class="logo">
+			<h1>PORTFOLIO</h1>
+		</div>
+		<ul class="navList">
+			<li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Resume</a></li>
+            <li><a href="#">Project</a></li>
+            <li><a href="https://www.instagram.com/akashpagi07/">Contact</a></li>
+		</ul>
+	</nav>
+	<!--  *****   Navbar Ends   *****  -->
+
+	<!--  *****   Banner Starts   *****  -->
+	<div class="banner">
+
+		<div class="info">
+			<h3>Hello!</h3>
+			<h1>I'm Akash Pagi</h1>
+			<h2>Data Science <span>Enthusiastic</span></h2>
+			<p>I'm a website developer,specializing in frontend development.Checkout my work and feel free to get in touch if you want to work with me.</p>
+			<div class="socialMedia">
+				<a href="https://github.com/asp977"><i class="fa-brands fa-github"></i></a>
+				<a href="https://www.linkedin.com/in/akashpagi/"><i class="fa-brands fa-linkedin-in"></i></a>
+				<a href="https://www.instagram.com/akashpagi07/"><i class="fa-brands fa-instagram"></i></a>
+				<a href="https://www.youtube.com/@akashpagi07"><i class="fa-brands fa-youtube"></i></a>
+				<a href="https://www.hackerrank.com/akashpagi"><i class="fa-brands fa-hackerrank"></i></a>							
+			</div>
+		</div>
+
+		<div class="image">
+			<img src="Kilota.jpg">
+		</div>
+	</div>
+	<!--  *****   Banner Ends   *****  -->
+
+</section>
+
+<section class="aboutSection"></section>
+
+<section class="projectSection"></section>
+
+
+
+
+<script type="text/javascript">
+	var homeSection = document.querySelector('.homeSection');
+	window.addEventListener('scroll', scrollFunction);
+
+	function scrollFunction(){
+		if(window.scrollY > 50){
+			homeSection.classList.add('active');
+		}
+		else{
+			homeSection.classList.remove('active');
+		}
+	}
+</script>
+</body>
+</html>

@@ -1,0 +1,132 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body{
+	width: 100%;
+	min-height: 100vh;
+	background-color: #f7f7f7;
+	font-family: 'Poppins', sans-serif;
+}
+.homeSection{
+	max-width: 1500px;
+	width: 100%;
+	min-height: 100vh;
+}
+.homeSection .navBar{
+	width: 100%;
+	height: 70px;
+	padding: 0px 10%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.homeSection.active .navBar{
+	position: fixed;
+	width: 100%;
+	top: 0;
+	left: 0;
+	background-color: #f7f7f7;
+	box-shadow: 0px 2px 5px 0px #ccc;
+	z-index: 100;
+	animation: navbarAnimation 0.4s linear;
+}
+@keyframes navbarAnimation{
+	0%{
+		transform: translateY(-100px);
+	}
+	100%{
+		transform: translateY(0px);
+	}
+}
+.navBar .logo{
+	font-size: 22px;
+	color: crimson;
+}
+.navBar ul.navList{
+	list-style: none;
+	display: flex;
+}
+.navBar ul.navList li{
+	padding-left: 40px;
+}
+.navBar ul.navList li a{
+	display: inline-block;
+	text-decoration: none;
+	color: #333;
+	transition: 0.4s;
+}
+.navBar ul.navList li a:hover{
+	color: crimson;
+}
+.homeSection .banner{
+	position: relative;
+	width: 100%;
+	min-height: calc(100vh - 70px);
+	padding: 20px 10%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.homeSection.active .banner{
+	top: 70px;
+}
+.banner .info{
+	flex-basis: 50%;
+}
+.banner .info h3{
+	font-size: 18px;
+	font-weight: 400;
+	color: #222;
+}
+.banner .info h1{
+	font-size: 48px;
+	font-weight: 500;
+	color: #222;
+	text-transform: uppercase;
+}
+.banner .info h2{
+	font-size: 24px;
+	font-weight: 400;
+	color: #555;
+	text-transform: uppercase;
+	padding: 5px 0px 20px 0px;
+}
+.banner .info h2 span{
+	color: crimson;
+}
+.banner .info p{
+	line-height: 1.4;
+	color: #666;
+}
+.banner .info .socialMedia{
+	margin-top: 40px;
+}
+.info .socialMedia a{
+	display: inline-block;
+	margin-right: 20px;
+	text-decoration: none;
+}
+.info .socialMedia a i{
+	font-size: 20px;
+	color: #555;
+	transition: 0.4s;
+}
+.info .socialMedia a:hover i{
+	color: crimson;
+	transform: scale(1.1) translateY(-2px);
+}
+.banner .image{
+	flex-basis: 50%;
+	text-align: right;
+}
+.banner .image img{
+	max-width: 500px;
+	min-width: 350px;
+	width: 100%;
+}
+
+.emptySection{
+	height: 100vh;
+}
