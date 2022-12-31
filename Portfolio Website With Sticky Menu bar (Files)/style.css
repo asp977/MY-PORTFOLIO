@@ -41,7 +41,7 @@ body{
 	}
 }
 .navBar .logo{
-	font-size: 22px;
+	font-size: 28px;
 	color: crimson;
 }
 .navBar ul.navList{
@@ -84,13 +84,13 @@ body{
 	font-size: 48px;
 	font-weight: 500;
 	color: #222;
-	text-transform: uppercase;
+	text-transform: capitalize;
 }
 .banner .info h2{
 	font-size: 24px;
 	font-weight: 400;
 	color: #555;
-	text-transform: uppercase;
+	text-transform: capitalize;
 	padding: 5px 0px 20px 0px;
 }
 .banner .info h2 span{
@@ -122,11 +122,91 @@ body{
 	text-align: right;
 }
 .banner .image img{
-	max-width: 500px;
+	max-width: 00px;
 	min-width: 350px;
 	width: 100%;
 }
 
-.emptySection{
+.skills{
 	height: 100vh;
+}
+
+
+.resume{
+	height: 100vh;
+}
+
+.project{
+	height: 100vh;
+}
+.blog{
+	height: 10
+}
+
+/* Qualification */
+section .qualification{
+    justify-content: space-between;
+    display: flex;
+    align-items: center ;
+}
+
+.qualification{
+    padding: 9.6rem 0;
+    background-color: #f7f7f7;
+    height: 100vh;
+}
+
+.container{
+    width: 100%;
+    padding: 35px 10%;
+}
+
+main.row{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 20px;
+}
+
+.col header.title{
+    color: #1a72ff;
+    padding: 0px 0px 20px 30px;
+}
+
+.col .contents{
+    padding: 0px 30px;
+    border-left: 2px solid #bababa;
+}
+
+.col .contents .box{
+    position: relative;
+    padding: 20px;
+    border: 2px solid #eaeaea;
+    background-color: #ffffff;
+    cursor: pointer;
+    transition: all 0.4s;
+    margin-bottom: 20px;
+    border-radius: 15px;
+}
+
+.col .contents .box:hover{
+    box-shadow: 0 3px 12px 0px #ccc;
+    border :1px solid transparent;
+}
+
+.col .contents .box::before{
+    content: '';
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    right: calc(100% + 22px);
+    top: 0;
+    background-color: rgb(219, 48, 83);
+    border: 2px solid white;
+
+}
+
+.box h4{
+    position: relative;
+    color: rgb(219, 48, 83);
 }
