@@ -1,13 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
 *{
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
 }
 body{
 	width: 100%;
 	min-height: 100vh;
 	background-color: #f7f7f7;
-	font-family: 'Poppins', sans-serif;
+	
 }
 .homeSection{
 	max-width: 1500px;
@@ -260,7 +262,9 @@ main.row{
 /* Qualification CSS style end here*/
 
 
-/* Contact Start*/
+
+
+/* Contact Start */
 
 .contact .ContactLogo{
 	font-size: 35px;
@@ -300,18 +304,9 @@ main.row{
   margin-top: 15px;
   position: relative;
 }
-.content .left-side::before{
-  content: '';
-  position: absolute;
-  height: 100%;
-  width: 2px;
-  right: 10px;
-  top: 50%;
-  transform: translateY(-50%);
-  background: #afafb6;
-}
+
 .content .left-side .details{
-  margin: 14px;
+  margin: 24px;
   text-align: center;
 }
 .content .left-side .details i{
@@ -330,7 +325,7 @@ main.row{
 }
 .container .content .right-side{
   width: 75%;
-  margin-left: 75px;
+  margin-left: px;
 }
 .content .right-side .topic-text{
   font-size: 23px;
@@ -350,8 +345,8 @@ main.row{
   outline: none;
   font-size: 16px;
   background: #F0F1F8;
-  border-radius: 6px;
-  padding: 0 15px;
+  border-radius: 7px;
+  padding: 0 25px;
   resize: none;
 }
 .right-side .message-box{
@@ -364,7 +359,7 @@ main.row{
   display: inline-block;
   margin-top: 12px;
 }
-.right-side .button {
+.right-side .button input[type="submit"]{
   color: #fff;
   font-size: 18px;
   outline: none;
@@ -375,16 +370,30 @@ main.row{
   cursor: pointer;
   transition: all 0.3s ease;
 }
-.button:hover{
+.button input[type="submit"]:hover{
   background:#2967ca;
 }
 
+.right-side .button input[type="reset"]{
+  color: #fff;
+  font-size: 18px;
+  outline: none;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 6px;
+  background: #217be2;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.button input[type="reset"]:hover{
+  background:#2967ca;
+}
 @media (max-width: 950px) {
-  .container{
+  .container1{
     width: 90%;
     padding: 30px 40px 40px 35px ;
   }
-  .container .content .right-side{
+  .container1 .content .right-side{
    width: 75%;
    margin-left: 55px;
 }
@@ -414,6 +423,4 @@ main.row{
 }
 
 
-
-
-/* Contact End */
+ /*Contact End */
